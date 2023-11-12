@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_ProductReviewWithImages
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <referenceBlock name="product.info.product_additional_data">
+        <action method="setTemplate">
+            <argument name="template" xsi:type="string">M2Commerce_ProductReviewWithImages::product/view/list.phtml</argument>
+        </action>
+        <arguments>
+            <argument name="viewModel" xsi:type="object">M2Commerce\ProductReviewWithImages\ViewModel\ReviewDetails</argument>
+        </arguments>
+    </referenceBlock>
+</layout>
